@@ -18,16 +18,14 @@ typedef int8 error;
 #define $c (char *)
 #define $i (int)
 
+// errors
 #define ErrBadFD 8
+#define ErrIO 4
+#define ErrNoErr 0
+#define ErrInit 1
+
 #define public __attribute__((visibility("default")))
 #define private static
-
-#ifdef Library
-public
-error errnumber;
-#else
-extern public error errnumber;
-#endif
 
 #define reterr(x)        \
     do                   \
@@ -36,6 +34,17 @@ extern public error errnumber;
         return 0;        \
     } while (false);
 
+#ifdef Library
+public
+bool initialized = false;
+
+public
+error errnumber;
+#else
+extern public bool initialized;
+extern public error errnumber;
+#endif
+
 // write 1 char
 public
 bool load(fd, int8);
@@ -43,3 +52,6 @@ bool load(fd, int8);
 // read 1 char
 public
 int8 store(fd);
+
+public
+void init(void);

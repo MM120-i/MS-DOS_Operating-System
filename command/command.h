@@ -1,5 +1,6 @@
-#include <stdio.h>
+#pragma once
 
-#include <os.h>
+#include <stdio.h>
+#include "../osapi/os.h"
 
 int main(int, char *[]);

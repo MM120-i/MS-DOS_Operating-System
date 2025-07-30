@@ -1,13 +1,15 @@
-#define bool int8
-#define true 1
-#define false 0
+#pragma once
 
 typedef unsigned char int8;
 typedef unsigned short int int16;
 typedef unsigned int int32;
 typedef unsigned long long int int64;
-typedef int16 fd;
+typedef int8 fd;
 typedef int8 error;
+
+#define bool int8
+#define true 1
+#define false 0
 
 #define $1 (int8 *)
 #define $2 (int16)
@@ -20,14 +22,19 @@ typedef int8 error;
 #define public __attribute__((visibility("default")))
 #define private static
 
-#define reterr(x)    \
-    do               \
-    {                \
-        errno = (x); \
-        return 0;    \
-    } while (false);
+#ifdef Library
+public
+error errnumber;
+#else
+extern public error errnumber;
+#endif
 
-error errno;
+#define reterr(x)        \
+    do                   \
+    {                    \
+        errnumber = (x); \
+        return 0;        \
+    } while (false);
 
 // write 1 char
 public

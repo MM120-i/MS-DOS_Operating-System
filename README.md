@@ -2,16 +2,17 @@
 
 A minimalist MS-DOS-inspired operating system built entirely in C, from first principles, with zero standard libraries, zero virtual machines, and maximum curiosity.
 
-##  Description
+##  Wtf even is this?
 
 This project is a handcrafted MS-DOS-style OS clone, implemented entirely using custom low-level utilities. It comes with a cross-platform `command.com` shell that runs on Windows, macOS, and Linux — no virtualization, no dependencies, just pure C.
 
-##  Why?
+##  Why tho?
 
-Because bootstrapping your operating system from scratch is cooler than copy-pasting from gpt 💀
+Because bootstrapping your OS from scratch is better than copy-pasting from gpt 💀
 
 This project was inspired by a mix of:
-- Retro-tech 
+- Retro-tech
+- OS dev
 - Understanding the guts of an OS
 - System architecture 
 

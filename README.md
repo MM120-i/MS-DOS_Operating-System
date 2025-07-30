@@ -17,9 +17,9 @@ This project was inspired by a mix of:
 
 ## Architecture at a Glance
 
-- ♠ `command.com`: User-facing shell interface
-- ❤ Middleware/API: Custom system call layer
-- ♣ Kernel: Simulated using host OS during development
+- `command.com`: User-facing shell interface
+- Middleware/API: Custom system call layer (still gotta work on)
+- Kernel: Simulated using the host OS during development (still gotta work on)
 
 ##  Development Philosophy
 

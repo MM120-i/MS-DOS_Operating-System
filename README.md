@@ -2,7 +2,7 @@
 
 A minimalist MS-DOS-inspired operating system built entirely in C, from first principles, with zero standard libraries, zero virtual machines, and maximum curiosity.
 
-##  Wtf even is this?
+##  What even is this?
 
 This project is a handcrafted MS-DOS-style OS clone, implemented entirely using custom low-level utilities. It comes with a cross-platform `command.com` shell that runs on Windows, macOS, and Linux — no virtualization, no dependencies, just pure C.
 
@@ -27,7 +27,7 @@ This project was inspired by a mix of:
 - Written in **pure C**, no standard libraries
 - Zero reliance on **virtual machines**
 - Modular Makefile-driven build system
-- Custom typedefs, macro-based visibility control, and a whole lotta `<stdint>` soul
+- Custom typedefs and macro-based visibility control
 
 ## Quick Start
 

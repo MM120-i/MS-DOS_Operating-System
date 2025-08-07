@@ -1,6 +1,6 @@
 # DOS-Clone-From-Scratch
 
-A minimalist MS-DOS-inspired operating system built entirely in C, from first principles, with zero standard libraries, zero virtual machines, and maximum curiosity.
+A minimalist MS-DOS-inspired operating system built entirely in C, from first principles, with zero standard libraries, zero virtual machines, and curiosity.
 
 ##  What even is this?
 
@@ -31,4 +31,5 @@ This project was inspired by a mix of:
 
 ## Quick Start
 
-Under Development
+still under development
+
